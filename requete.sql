@@ -62,18 +62,6 @@ INSERT INTO `messages` (`id`, `author`, `content`, `created_at`) VALUES
 	(45, 'Mr. Chandler Reinger', 'Voluptatem quisquam dolor impedit nihil possimus iure eum qui suscipit.', '2017-07-24 01:24:46'),
 	(46, 'Mr. Chandler Reinger', 'Sint quis autem aut voluptas temporibus eos velit fuga facere porro est dolorum quam quos quo enim.', '2017-07-24 21:13:49'),
 	(47, 'Mr. Chandler Reinger', 'Officiis porro labore consectetur ratione et qui amet asperiores voluptatem dolorem.', '2017-07-24 12:48:06'),
-	(50, 'Joseph', 'Bonjour à tous !', '2017-07-25 01:23:55'),
-	(49, 'Lior', 'Mon message trop bien !', '2017-07-25 01:01:28'),
-	(51, 'Jeanne', 'Salut les amis !', '2017-07-25 01:24:54'),
-	(52, 'Lior', 'Est-ce que ça marche ?', '2017-07-25 01:41:13'),
-	(53, 'Lior', 'nouveau test', '2017-07-25 01:42:04'),
-	(54, 'Lior', 'Nouveau test encore', '2017-07-25 01:42:15'),
-	(55, 'Lior', 'et encore', '2017-07-25 01:42:16'),
-	(56, 'Lior', 'et encore !', '2017-07-25 01:42:18'),
-	(57, 'Joseph', 'Bonjour à tous !', '2017-07-25 01:42:47'),
-	(58, 'Jeanne', 'Bien salut mon Joseph !', '2017-07-25 01:44:00'),
-	(59, 'Lior', 'Bonjour à tous !', '2017-07-25 01:44:13'),
-	(60, 'Jeanne', 'Salut Lior, comment vas-tu ?', '2017-07-25 01:44:19');
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
