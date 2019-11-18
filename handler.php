@@ -4,6 +4,7 @@
  * Connexion simple à la base de données via PDO !
  */
 require_once('data/database.php');
+require_once('function/trtform.php');
 
 
 /**
@@ -21,4 +22,3 @@ if($task == "write"){
   getMessages();
 }
 
-require_once('function/trtform.php');

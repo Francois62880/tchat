@@ -5,12 +5,12 @@
         {
             session_start();
         }
-        return !empty($_SESSION['connecte']);
+        return !empty($_SESSION['connect']);
     }
     function user_connect(): void
     {
         if (!connect()) {
-            header('location: /index.php');
+            header('location:/login.php');
             exit();
         }
     }
