@@ -1,15 +1,3 @@
--- --------------------------------------------------------
--- Hôte :                        127.0.0.1
--- Version du serveur:           5.7.11 - MySQL Community Server (GPL)
--- SE du serveur:                Win64
--- HeidiSQL Version:             9.2.0.4961
--- --------------------------------------------------------
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-
 -- Export de la structure de la base pour chat
 CREATE DATABASE IF NOT EXISTS `chat` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `chat`;
@@ -24,9 +12,9 @@ CREATE TABLE IF NOT EXISTS `messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=utf8 COMMENT='La table qui va contenir tous les messages voyons !';
 
--- Export de données de la table chat.messages : 46 rows
+-- Export de données de la table chat.messages
 DELETE FROM `messages`;
-/*!40000 ALTER TABLE `messages` DISABLE KEYS */;
+
 INSERT INTO `messages` (`id`, `author`, `content`, `created_at`) VALUES
 	(14, 'Tiara Wiza', 'Est odio animi et voluptatem voluptas et et nobis beatae laborum tempora quia aliquid cum aut aperiam exercitationem.', '2017-07-24 16:03:27'),
 	(15, 'Tiara Wiza', 'Praesentium molestiae ut repudiandae et nihil ut at consectetur aut itaque sit.', '2017-07-24 09:38:48'),
@@ -62,7 +50,11 @@ INSERT INTO `messages` (`id`, `author`, `content`, `created_at`) VALUES
 	(45, 'Mr. Chandler Reinger', 'Voluptatem quisquam dolor impedit nihil possimus iure eum qui suscipit.', '2017-07-24 01:24:46'),
 	(46, 'Mr. Chandler Reinger', 'Sint quis autem aut voluptas temporibus eos velit fuga facere porro est dolorum quam quos quo enim.', '2017-07-24 21:13:49'),
 	(47, 'Mr. Chandler Reinger', 'Officiis porro labore consectetur ratione et qui amet asperiores voluptatem dolorem.', '2017-07-24 12:48:06'),
-/*!40000 ALTER TABLE `messages` ENABLE KEYS */;
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+-- Export de la structure de table chat. users
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255),
+  `password` varchar(255),
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT;

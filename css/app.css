@@ -18,6 +18,10 @@
  header {
    text-align: center;
  }
+ .titre
+ {
+     text-align: center;
+ }
  
  .messages {
    background-color: steelblue;
