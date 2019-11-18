@@ -4,7 +4,6 @@
  */
 function getMessages(){
   global $db;
-
   // 1. On requête la base de données pour sortir les 20 derniers messages
   $resultats = $db->query("SELECT * FROM messages ORDER BY created_at DESC LIMIT 20");
   // 2. On traite les résultats
@@ -20,23 +19,17 @@ function postMessage(){
   // 1. Analyser les paramètres passés en POST (author, content)
   
   if(!array_key_exists('author', $_POST) || !array_key_exists('content', $_POST)){
-
     echo json_encode(["status" => "error", "message" => "One field or many have not been sent"]);
     return;
-
   }
-
   $author = $_POST['author'];
   $content = $_POST['content'];
-
   // 2. Créer une requête qui permettra d'insérer ces données
   $query = $db->prepare('INSERT INTO messages SET author = :author, content = :content, created_at = NOW()');
-
   $query->execute([
     "author" => $author,
     "content" => $content
   ]);
-
   // 3. Donner un statut de succes ou d'erreur au format JSON
   echo json_encode(["status" => "success"]);
 }

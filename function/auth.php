@@ -10,7 +10,7 @@
     function user_connect(): void
     {
         if (!connect()) {
-            header('location:/login.php');
+            header('location: /login.php');
             exit();
         }
     }

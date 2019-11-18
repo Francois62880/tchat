@@ -1,8 +1,6 @@
 <?php
 require 'function/auth.php';
 user_connect();
-
-
 require_once ('elements/header.php');
 ?>
 
